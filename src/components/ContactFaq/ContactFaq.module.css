@@ -1,0 +1,136 @@
+.section {
+  padding: 86px 0;
+  background:
+    radial-gradient(
+      circle at 82% 18%,
+      rgba(200, 121, 65, 0.1),
+      transparent 28%
+    ),
+    var(--color-bg-light);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 54px;
+  align-items: start;
+}
+
+.eyebrow {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.title {
+  font-size: clamp(32px, 4vw, 50px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  color: var(--color-primary);
+}
+
+.text {
+  margin-top: 18px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.75;
+  color: var(--color-text-light);
+}
+
+.faqs {
+  display: grid;
+  gap: 14px;
+}
+
+.item {
+  background: var(--color-white);
+  border: 1px solid rgba(31, 41, 51, 0.08);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.question {
+  width: 100%;
+  min-height: 70px;
+  padding: 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  text-align: left;
+  color: var(--color-primary);
+}
+
+.question span {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.question svg {
+  flex: 0 0 auto;
+  color: var(--color-secondary);
+  transition: transform var(--transition);
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.25s ease;
+}
+
+.answer.open {
+  max-height: 160px;
+  opacity: 1;
+}
+
+.answer p {
+  margin: 0;
+  padding: 0 22px 22px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: var(--color-text-light);
+}
+
+@media (max-width: 920px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+}
+
+@media (max-width: 620px) {
+  .section {
+    padding: 56px 0;
+  }
+
+  .question {
+    min-height: 64px;
+    padding: 0 18px;
+  }
+
+  .question span {
+    font-size: 15px;
+  }
+
+  .answer p {
+    padding: 0 18px 20px;
+  }
+}

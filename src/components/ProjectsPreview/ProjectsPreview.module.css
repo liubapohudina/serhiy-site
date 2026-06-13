@@ -1,0 +1,240 @@
+.section {
+  position: relative;
+  padding: 86px 0;
+  overflow: hidden;
+  background: var(--color-white);
+}
+
+.bgBlur {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(980px, 86vw);
+  height: 360px;
+  transform: translate(-50%, -45%);
+  background:
+    radial-gradient(
+      circle at 20% 40%,
+      rgba(200, 121, 65, 0.18),
+      transparent 34%
+    ),
+    radial-gradient(circle at 80% 45%, rgba(31, 41, 51, 0.1), transparent 36%),
+    rgba(245, 241, 234, 0.72);
+  filter: blur(42px);
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+.head {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.title {
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  color: var(--color-primary);
+}
+
+.text {
+  max-width: 620px;
+  margin: 16px auto 0;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: var(--color-text-light);
+}
+
+.grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  isolation: isolate;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(18, 24, 32, 0.02) 0%,
+    rgba(18, 24, 32, 0.18) 44%,
+    rgba(18, 24, 32, 0.9) 100%
+  );
+}
+
+.card picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  transform: scale(1.02);
+  transition:
+    transform var(--transition-slow),
+    filter var(--transition-slow);
+}
+
+.card:hover .image {
+  transform: scale(1.08);
+  filter: saturate(1.05) contrast(1.03);
+}
+
+.content {
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
+  z-index: 2;
+  padding: 18px;
+
+  color: var(--color-white);
+  background: rgba(18, 24, 32, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(16px);
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.content p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.action {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.btn {
+  min-height: 52px;
+  padding: 0 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1;
+
+  color: var(--color-primary);
+  background: var(--color-white);
+  border: 1px solid rgba(31, 41, 51, 0.14);
+  border-radius: var(--radius-xs);
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    color var(--transition),
+    border-color var(--transition);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  color: var(--color-secondary);
+  border-color: rgba(200, 121, 65, 0.35);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 920px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: 360px;
+  }
+
+  .image {
+    height: 360px;
+  }
+}
+
+@media (max-width: 620px) {
+  .section {
+    padding: 56px 0;
+  }
+
+  .head {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .text {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 16px;
+  }
+
+  .card {
+    min-height: 330px;
+    border-radius: var(--radius-sm);
+  }
+
+  .image {
+    height: 330px;
+  }
+
+  .content {
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    padding: 16px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

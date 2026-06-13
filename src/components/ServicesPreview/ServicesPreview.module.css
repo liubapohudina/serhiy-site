@@ -1,0 +1,153 @@
+.section {
+  padding: 72px 0 86px;
+  background:
+    radial-gradient(
+      circle at 12% 18%,
+      rgba(200, 121, 65, 0.08),
+      transparent 28%
+    ),
+    var(--color-bg-light);
+}
+
+.head {
+  max-width: 760px;
+  margin-bottom: 34px;
+}
+
+.eyebrow {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.title {
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  color: var(--color-primary);
+}
+
+.text {
+  max-width: 650px;
+  margin-top: 16px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: var(--color-text-light);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  position: relative;
+  min-height: 220px;
+  padding: 34px 28px 30px;
+
+  background: var(--color-white);
+  border: 1px solid rgba(31, 41, 51, 0.08);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+
+  overflow: hidden;
+
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: var(--gradient-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(200, 121, 65, 0.35);
+  box-shadow: var(--shadow-md);
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.icon {
+  width: 58px;
+  height: 58px;
+  margin-bottom: 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-secondary);
+  background: rgba(200, 121, 65, 0.08);
+  border-radius: var(--radius-sm);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--color-primary);
+}
+
+.card p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--color-text-light);
+}
+
+@media (max-width: 920px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .section {
+    padding: 52px 0;
+  }
+
+  .head {
+    margin-bottom: 28px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card {
+    min-height: auto;
+    padding: 28px 24px;
+  }
+
+  .icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 18px;
+  }
+}

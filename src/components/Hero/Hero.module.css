@@ -1,0 +1,256 @@
+.hero {
+  position: relative;
+  min-height: calc(100vh - 124px);
+  align-items: flex-start;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: var(--color-white);
+  background: var(--color-primary-dark);
+}
+
+.video,
+.mobileImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  object-fit: cover;
+}
+
+.mobileImage {
+  display: none;
+  background-image: url('../../assets/video/poster.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(18, 24, 32, 0.94) 0%,
+      rgba(18, 24, 32, 0.78) 42%,
+      rgba(18, 24, 32, 0.36) 72%,
+      rgba(18, 24, 32, 0.18) 100%
+    ),
+    radial-gradient(
+      circle at 18% 50%,
+      rgba(200, 121, 65, 0.16),
+      transparent 32%
+    );
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 810px;
+  padding: 40px 0 86px;
+}
+
+.eyebrow {
+  margin-bottom: 18px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.title {
+  max-width: 780px;
+  font-size: clamp(42px, 6vw, 76px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  color: var(--color-white);
+}
+
+.text {
+  max-width: 650px;
+  margin-top: 26px;
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 500;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  min-height: 58px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-xs);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    background var(--transition),
+    border-color var(--transition),
+    color var(--transition);
+}
+
+.primaryBtn {
+  gap: 12px;
+  padding: 0 30px;
+  color: var(--color-white);
+  background: var(--gradient-accent);
+  box-shadow: 0 16px 34px rgba(200, 121, 65, 0.32);
+}
+
+.primaryBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 44px rgba(200, 121, 65, 0.42);
+}
+
+.secondaryBtn {
+  padding: 0 30px;
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+}
+
+.secondaryBtn:hover {
+  color: var(--color-primary);
+  background: var(--color-white);
+  border-color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 62px;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 14px;
+}
+
+.featureIcon {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-secondary);
+}
+
+.feature h3 {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--color-white);
+}
+
+.feature p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 920px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .video {
+    display: none;
+  }
+
+  .mobileImage {
+    display: block;
+  }
+
+  .overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(18, 24, 32, 0.86) 0%,
+        rgba(18, 24, 32, 0.82) 48%,
+        rgba(18, 24, 32, 0.94) 100%
+      ),
+      radial-gradient(
+        circle at 24% 26%,
+        rgba(200, 121, 65, 0.2),
+        transparent 34%
+      );
+  }
+
+  .content {
+    max-width: 100%;
+    padding: 82px 0 64px;
+  }
+
+  .title {
+    font-size: clamp(38px, 10vw, 58px);
+  }
+
+  .text {
+    max-width: 100%;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 620px) {
+  .content {
+    padding: 64px 0 52px;
+  }
+
+  .eyebrow {
+    margin-bottom: 14px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .title {
+    letter-spacing: -0.035em;
+  }
+
+  .text {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    margin-top: 32px;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+    min-height: 54px;
+  }
+}
