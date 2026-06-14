@@ -1,8 +1,8 @@
 import { Link } from 'react-router';
 import { Mail, MapPin, Phone } from 'lucide-react';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
-import logo from '../../assets/images/logo-white.webp';
+import { FaInstagram } from 'react-icons/fa';
 
+import logo from '../../assets/images/logo-white.webp';
 import styles from './Footer.module.css';
 
 const navLinks = [
@@ -29,7 +29,7 @@ export default function Footer() {
             <Link to="/" className={styles.logo}>
               <img
                 src={logo}
-                alt="Serhii Drohaltsev Gebäudeservice & Renovierung"
+                alt="Serhii Drohaltsev Renovierung"
                 width="210"
                 height="70"
                 loading="lazy"
@@ -37,15 +37,18 @@ export default function Footer() {
             </Link>
 
             <p>
-              Ihr Ansprechpartner für Malerarbeiten, Fassadenanstriche und
-              Renovierungsarbeiten — persönlich, sauber und zuverlässig.
+              Ihr Ansprechpartner für Spachtelarbeiten, Airless-Anstriche,
+              Fassadenanstriche, Trockenbau, Bodenverlegung und
+              Renovierungsarbeiten in Offenbach am Main und Umgebung.
             </p>
 
             <div className={styles.socials}>
-              <a href="#" aria-label="Facebook">
-                <FaFacebook size={18} />
-              </a>
-              <a href="#" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/sd_renovierung"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
                 <FaInstagram size={18} />
               </a>
             </div>
@@ -53,6 +56,7 @@ export default function Footer() {
 
           <div>
             <h3>Navigation</h3>
+
             <ul className={styles.links}>
               {navLinks.map((link) => (
                 <li key={link.to}>
@@ -64,47 +68,47 @@ export default function Footer() {
 
           <div>
             <h3>Kontakt</h3>
+
             <ul className={styles.contact}>
               <li>
                 <Phone size={17} />
-                <a href="tel:+4917612345678">+49 176 12345678</a>
+                <a href="tel:+4915256507271">+49 152 56507271</a>
               </li>
+
               <li>
                 <Mail size={17} />
-                <a href="mailto:info@your-domain.de">info@your-domain.de</a>
+                <a href="mailto:remontprof3110@gmail.com">
+                  remontprof3110@gmail.com
+                </a>
               </li>
+
               <li>
                 <MapPin size={17} />
                 <span>
-                  Musterstraße 12
+                  Lilienthalstraße 16
                   <br />
-                  12345 Musterstadt
+                  63073 Offenbach am Main
                 </span>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3>Öffnungszeiten</h3>
-            <div className={styles.hours}>
-              <p>Mo–Fr: 08:00–18:00 Uhr</p>
-              <p>Sa: 09:00–14:00 Uhr</p>
-              <p>So: Geschlossen</p>
-            </div>
+            <h3>Einsatzgebiet</h3>
 
-            <h3 className={styles.legalTitle}>Rechtliches</h3>
-            <div className={styles.legalInfo}>
-              <p>Gewerbeanmeldung Nr.: 123456789012</p>
-              <p>Finanzamt Musterstadt</p>
-              <p>USt-IdNr.: DE123456789</p>
+            <div className={styles.hours}>
+              <p>Offenbach am Main</p>
+              <p>Frankfurt am Main</p>
+              <p>Hanau</p>
+              <p>Rhein-Main-Gebiet</p>
             </div>
           </div>
         </div>
 
         <div className={styles.bottom}>
           <p>
-            © {new Date().getFullYear()} Serhii Drohaltsev Gebäudeservice &
-            Renovierung. Alle Rechte vorbehalten.
+            © {new Date().getFullYear()} Serhii Drohaltsev Renovierung. Alle
+            Rechte vorbehalten.
           </p>
 
           <nav aria-label="Rechtliche Links">

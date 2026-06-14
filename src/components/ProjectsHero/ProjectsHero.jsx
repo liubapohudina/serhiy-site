@@ -1,15 +1,12 @@
 import styles from './ProjectsHero.module.css';
-import img from '../../assets/video/poster.png';
+import img from '../../assets/images/hero-master.webp';
+import imgM from '../../assets/images/hero-master-mobile.webp';
 
 export default function ProjectsHero() {
   return (
     <section className={styles.hero}>
       <picture>
-        {/* <source
-          srcSet="/img/projects-hero-mobile.webp"
-          media="(max-width: 620px)"
-          type="image/webp"
-        /> */}
+        <source srcSet={imgM} media="(max-width: 620px)" type="image/webp" />
 
         <img
           src={img}

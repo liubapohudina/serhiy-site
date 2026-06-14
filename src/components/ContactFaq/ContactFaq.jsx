@@ -12,17 +12,27 @@ const faqs = [
   {
     question: 'Erstellen Sie ein unverbindliches Angebot?',
     answer:
-      'Ja. Nach einer kurzen Projektbeschreibung oder Besichtigung kann ich ein transparentes Angebot erstellen.',
+      'Ja. Nach einer kurzen Projektbeschreibung oder einer Besichtigung vor Ort erhalten Sie ein transparentes und unverbindliches Angebot.',
   },
   {
-    question: 'Arbeiten Sie auch an Fassaden?',
+    question: 'Welche Arbeiten bieten Sie an?',
     answer:
-      'Ja, ich übernehme Fassadenanstriche sowie vorbereitende Arbeiten und Fassadensanierung.',
+      'Ich biete Spachtelarbeiten, Airless-Anstriche, Fassadenanstriche, Trockenbau, Bodenverlegung sowie Renovierungsarbeiten für Wohnungen, Häuser und Gewerbeobjekte an.',
+  },
+  {
+    question: 'Verlegen Sie auch Laminat oder Vinyl?',
+    answer:
+      'Ja. Ich übernehme die Verlegung von Laminat, Vinyl und Parkett. Fliesenarbeiten gehören jedoch nicht zu meinem Leistungsumfang.',
   },
   {
     question: 'Übernehmen Sie auch kleinere Renovierungsarbeiten?',
     answer:
-      'Ja, kleinere Renovierungsarbeiten sind je nach Umfang und Verfügbarkeit möglich.',
+      'Ja, auch kleinere Renovierungs- und Modernisierungsarbeiten sind je nach Umfang und Verfügbarkeit möglich.',
+  },
+  {
+    question: 'In welchem Gebiet sind Sie tätig?',
+    answer:
+      'Ich arbeite hauptsächlich in Offenbach am Main, Frankfurt am Main, Hanau und im gesamten Rhein-Main-Gebiet.',
   },
 ];
 

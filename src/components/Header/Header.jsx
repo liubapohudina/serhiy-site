@@ -48,7 +48,7 @@ export default function Header() {
           <NavLink to="/" className={styles.logo} onClick={closeMenu}>
             <img
               src={logo}
-              alt="Serhii Drohaltsev Gebäudeservice & Renovierung"
+              alt="Serhii Drohaltsev Renovierung"
               width="260"
               height="74"
             />

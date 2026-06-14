@@ -4,10 +4,10 @@ import AboutExperience from '../components/AboutExperience/AboutExperience.jsx';
 import CtaSection from '../components/CtaSection/CtaSection.jsx';
 
 export function meta() {
-  const title = 'Über mich | Serhii Drohaltsev Gebäudeservice & Renovierung';
+  const title = 'Über mich | 20+ Jahre Erfahrung in Renovierung & Innenausbau';
 
   const description =
-    'Erfahren Sie mehr über Serhii Drohaltsev, selbstständiger Handwerker mit über 10 Jahren Erfahrung in Malerarbeiten, Fassadenarbeiten und Renovierung.';
+    'Lernen Sie Serhii Drohaltsev kennen. Selbstständiger Handwerker mit über 20 Jahren Erfahrung in Spachtelarbeiten, Airless-Anstrichen, Fassadenanstrichen, Trockenbau, Bodenverlegung und Renovierungsarbeiten in Offenbach am Main und Umgebung.';
 
   return [
     { title },
@@ -21,7 +21,6 @@ export function meta() {
     },
   ];
 }
-
 export default function AboutPage() {
   return (
     <>

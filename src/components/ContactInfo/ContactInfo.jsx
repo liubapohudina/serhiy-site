@@ -13,32 +13,32 @@ const contactItems = [
   {
     icon: Phone,
     label: 'Telefon',
-    value: '+49 176 12345678',
-    href: 'tel:+4917612345678',
+    value: '+49 152 56507271',
+    href: 'tel:+4915256507271',
   },
   {
     icon: Mail,
     label: 'E-Mail',
-    value: 'info@your-domain.de',
-    href: 'mailto:info@your-domain.de',
+    value: 'remontprof3110@gmail.com',
+    href: 'mailto:remontprof3110@gmail.com',
   },
   {
     icon: MapPin,
     label: 'Adresse',
-    value: 'Musterstraße 12, 12345 Musterstadt',
+    value: 'Lilienthalstraße 16, 63073 Offenbach am Main',
   },
   {
     icon: Clock3,
     label: 'Öffnungszeiten',
-    value: 'Mo–Fr: 08:00–18:00, Sa: 09:00–14:00',
+    value: 'Mo–Sa: 08:00–18:00',
   },
 ];
 
 const highlights = [
-  '10+ Jahre Erfahrung',
-  'Direkter Ansprechpartner',
+  '20+ Jahre Erfahrung',
+  'Persönliche Betreuung',
   'Saubere Ausführung',
-  'Termintreue Arbeit',
+  'Termingerechte Umsetzung',
 ];
 
 export default function ContactInfo() {
@@ -54,8 +54,9 @@ export default function ContactInfo() {
             </h2>
 
             <p className={styles.text}>
-              Ob kurzer Anruf, E-Mail oder Anfrage über das Formular — ich melde
-              mich zeitnah zurück und bespreche Ihr Projekt persönlich.
+              Ob Telefon, E-Mail oder Kontaktformular – ich melde mich zeitnah
+              zurück und berate Sie persönlich zu Ihrem Renovierungs- oder
+              Ausbauprojekt.
             </p>
 
             <div className={styles.contacts}>
@@ -96,8 +97,9 @@ export default function ContactInfo() {
             <h3>Serhii Drohaltsev</h3>
 
             <p className={styles.cardText}>
-              Ich begleite Ihr Projekt direkt — von der ersten Anfrage bis zur
-              fertigen Ausführung.
+              Über 20 Jahre Erfahrung im Bereich Renovierung, Innenausbau und
+              Modernisierung. Ich begleite Ihr Projekt persönlich – von der
+              ersten Anfrage bis zur fertigen Ausführung.
             </p>
 
             <ul>

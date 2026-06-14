@@ -4,11 +4,11 @@ const UPDATED_AT = '13.06.2026';
 
 export function meta() {
   return [
-    { title: 'Datenschutz | Serhii Drohaltsev Gebäudeservice & Renovierung' },
+    { title: 'Datenschutz | Serhii Drohaltsev Renovierung' },
     {
       name: 'description',
       content:
-        'Datenschutzerklärung für die Website von Serhii Drohaltsev Gebäudeservice & Renovierung.',
+        'Datenschutzerklärung für die Website von Serhii Drohaltsev Renovierung in Offenbach am Main.',
     },
     { name: 'robots', content: 'noindex, follow' },
   ];
@@ -37,24 +37,25 @@ export default function PrivacyPolicyPage() {
               Verantwortlich für die Datenverarbeitung auf dieser Website ist:
             </p>
             <p>
-              <strong>Serhii Drohaltsev Gebäudeservice & Renovierung</strong>
+              <strong>Serhii Drohaltsev Renovierung</strong>
               <br />
-              Musterstraße 12
+              Lilienthalstraße 16
               <br />
-              12345 Musterstadt
+              63073 Offenbach am Main
               <br />
               Deutschland
               <br />
-              Telefon: +49 176 12345678
+              Telefon: +49 152 56507271
               <br />
-              E-Mail: info@your-domain.de
+              E-Mail: remontprof3110@gmail.com
             </p>
 
             <h2>2. Allgemeine Hinweise</h2>
             <p>
               Der Schutz Ihrer personenbezogenen Daten ist mir wichtig. Diese
-              Website informiert über meine Leistungen im Bereich Malerarbeiten,
-              Fassadenanstriche, Fassadensanierung und Renovierungsarbeiten.
+              Website informiert über meine Leistungen im Bereich
+              Spachtelarbeiten, Airless-Anstriche, Fassadenanstriche,
+              Trockenbau, Bodenverlegung und Renovierungsarbeiten.
               Personenbezogene Daten werden nur verarbeitet, soweit dies für den
               Betrieb der Website, die Bearbeitung von Anfragen oder zur
               Erfüllung gesetzlicher Pflichten erforderlich ist.
@@ -124,7 +125,16 @@ export default function PrivacyPolicyPage() {
               erfolgen. Ohne Einwilligung werden keine Analyse-Skripte geladen.
             </p>
 
-            <h2>8. Speicherdauer</h2>
+            <h2>8. Instagram</h2>
+            <p>
+              Auf dieser Website kann ein Link zu meinem Instagram-Profil
+              eingebunden sein. Beim Anklicken des Links verlassen Sie diese
+              Website und werden zu Instagram weitergeleitet. Für die
+              Verarbeitung personenbezogener Daten auf Instagram ist der
+              jeweilige Anbieter verantwortlich.
+            </p>
+
+            <h2>9. Speicherdauer</h2>
             <p>
               Personenbezogene Daten werden nur so lange gespeichert, wie es für
               den jeweiligen Zweck erforderlich ist. Anfragen werden gelöscht,
@@ -132,7 +142,7 @@ export default function PrivacyPolicyPage() {
               Aufbewahrungspflichten bestehen.
             </p>
 
-            <h2>9. Ihre Rechte</h2>
+            <h2>10. Ihre Rechte</h2>
             <p>
               Sie haben im Rahmen der gesetzlichen Voraussetzungen das Recht auf
               Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
@@ -144,14 +154,14 @@ export default function PrivacyPolicyPage() {
               mit Wirkung für die Zukunft zu widerrufen.
             </p>
 
-            <h2>10. Beschwerderecht</h2>
+            <h2>11. Beschwerderecht</h2>
             <p>
               Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer Daten gegen
               Datenschutzrecht verstößt, haben Sie das Recht, sich bei einer
               Datenschutzaufsichtsbehörde zu beschweren.
             </p>
 
-            <h2>11. Aktualisierung dieser Datenschutzerklärung</h2>
+            <h2>12. Aktualisierung dieser Datenschutzerklärung</h2>
             <p>
               Diese Datenschutzerklärung kann angepasst werden, wenn sich
               technische, rechtliche oder organisatorische Änderungen ergeben.

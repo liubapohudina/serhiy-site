@@ -4,11 +4,10 @@ import ServicesBenefits from '../components/ServicesBenefits/ServicesBenefits.js
 import CtaSection from '../components/CtaSection/CtaSection.jsx';
 
 export function meta() {
-  const title =
-    'Leistungen | Malerarbeiten & Fassadenarbeiten | Serhii Drohaltsev';
+  const title = 'Leistungen | Spachtelarbeiten, Trockenbau & Bodenverlegung';
 
   const description =
-    'Professionelle Malerarbeiten, Innenanstriche, Fassadenanstriche, Fassadensanierung und Renovierungsarbeiten. Persönlich, sauber und zuverlässig.';
+    'Professionelle Spachtelarbeiten, Airless-Anstriche, Fassadenanstriche, Trockenbau, Bodenverlegung und Renovierungsarbeiten. Über 20 Jahre Erfahrung, saubere Ausführung und persönliche Betreuung in Offenbach am Main und Umgebung.';
 
   return [
     { title },
@@ -22,7 +21,6 @@ export function meta() {
     },
   ];
 }
-
 export default function ServicesPage() {
   return (
     <>

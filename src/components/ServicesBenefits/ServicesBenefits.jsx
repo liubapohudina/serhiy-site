@@ -11,34 +11,34 @@ import styles from './ServicesBenefits.module.css';
 
 const benefits = [
   {
+    icon: BadgeCheck,
+    title: '20+ Jahre Erfahrung',
+    text: 'Langjährige Erfahrung in Renovierung, Innenausbau und Modernisierung.',
+  },
+  {
     icon: Handshake,
     title: 'Persönliche Betreuung',
-    text: 'Sie sprechen direkt mit mir — von der ersten Anfrage bis zur fertigen Arbeit.',
+    text: 'Direkter Kontakt vom ersten Gespräch bis zur Fertigstellung Ihres Projekts.',
   },
   {
     icon: PaintBucket,
-    title: 'Saubere Arbeit',
-    text: 'Ich achte auf Vorbereitung, Schutz der Räume und eine ordentliche Ausführung.',
+    title: 'Saubere Ausführung',
+    text: 'Sorgfältige Arbeitsweise und Schutz Ihrer Räume während der Arbeiten.',
   },
   {
     icon: Clock,
     title: 'Termintreue',
-    text: 'Absprachen und Zeitpläne werden zuverlässig eingehalten.',
+    text: 'Zuverlässige Planung und pünktliche Umsetzung aller Arbeiten.',
   },
   {
     icon: Wallet,
     title: 'Faire Preise',
-    text: 'Transparente Angebote ohne versteckte Kosten oder unnötige Leistungen.',
+    text: 'Transparente Angebote ohne versteckte Kosten.',
   },
   {
     icon: ShieldCheck,
-    title: 'Langlebiger Schutz',
-    text: 'Besonders bei Fassaden stehen Schutz, Qualität und Beständigkeit im Fokus.',
-  },
-  {
-    icon: BadgeCheck,
-    title: 'Qualität im Detail',
-    text: 'Jedes Projekt wird mit Sorgfalt, Erfahrung und Blick fürs Ergebnis umgesetzt.',
+    title: 'Qualität & Langlebigkeit',
+    text: 'Hochwertige Materialien und professionelle Verarbeitung für dauerhafte Ergebnisse.',
   },
 ];
 
@@ -48,16 +48,18 @@ export default function ServicesBenefits() {
       <div className="container">
         <div className={styles.wrapper}>
           <div className={styles.left}>
-            <p className={styles.eyebrow}>Warum ich</p>
+            <p className={styles.eyebrow}>Ihre Vorteile</p>
 
             <h2 className={styles.title}>
-              Persönliche Handwerksarbeit statt anonymer Großbetrieb
+              Über 20 Jahre Erfahrung im Bereich Renovierung und Innenausbau
             </h2>
 
             <p className={styles.text}>
-              Bei mir haben Sie einen festen Ansprechpartner. Ich bespreche Ihr
-              Projekt persönlich, arbeite sorgfältig und achte darauf, dass das
-              Ergebnis zu Ihren Vorstellungen passt.
+              Als selbstständiger Handwerker begleite ich Ihr Projekt
+              persönlich. Ob Spachtelarbeiten, Airless-Anstriche, Trockenbau,
+              Bodenverlegung oder Renovierungsarbeiten – Sie erhalten
+              professionelle Ausführung, persönliche Betreuung und zuverlässige
+              Ergebnisse aus einer Hand.
             </p>
           </div>
 

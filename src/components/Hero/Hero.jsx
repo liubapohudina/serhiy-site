@@ -1,25 +1,31 @@
 import { Link } from 'react-router';
-import { ArrowRight, BadgeCheck, House, Paintbrush } from 'lucide-react';
+import {
+  ArrowRight,
+  Paintbrush,
+  Building2,
+  Hammer,
+  BadgeCheck,
+} from 'lucide-react';
 
 import styles from './Hero.module.css';
 import v from '../../assets/video/v-1.mp4';
-import poster from '../../assets/video/poster.png';
+import poster from '../../assets/video/poster.webp';
 
 const features = [
   {
     icon: Paintbrush,
-    title: 'Malerarbeiten',
-    text: 'Präzise Ausführung und hochwertige Ergebnisse',
+    title: 'Spachtelarbeiten & Airless-Anstriche',
+    text: 'Saubere Oberflächen und gleichmäßige Beschichtungen für Innenräume.',
   },
   {
-    icon: House,
-    title: 'Fassadenarbeiten',
-    text: 'Schutz und modernes Erscheinungsbild Ihrer Immobilie',
+    icon: Building2,
+    title: 'Fassadenanstriche',
+    text: 'Schutz, Werterhalt und ein gepflegtes Erscheinungsbild Ihrer Fassade.',
   },
   {
-    icon: BadgeCheck,
-    title: 'Zuverlässiger Service',
-    text: 'Persönliche Beratung und termingerechte Umsetzung',
+    icon: Hammer,
+    title: 'Trockenbau & Bodenverlegung',
+    text: 'Verlegung von Laminat, Vinyl und Parkett sowie Trockenbauarbeiten.',
   },
 ];
 
@@ -43,16 +49,18 @@ export default function Hero() {
       <div className="container">
         <div className={styles.content}>
           <p className={styles.eyebrow}>
-            Ihr Experte für Maler- & Fassadenarbeiten
+            Spachtelarbeiten • Airless-Anstriche • Trockenbau
           </p>
 
           <h1 className={styles.title}>
-            Professionelle Maler- und Fassadenarbeiten mit höchster Sorgfalt
+            Professionelle Renovierungsarbeiten für Wohnungen, Häuser und
+            Gewerbeobjekte
           </h1>
 
           <p className={styles.text}>
-            Innenanstriche, Fassadenanstriche, Fassadensanierung und
-            Renovierungsarbeiten — sauber, zuverlässig und termingerecht.
+            Ich biete Spachtelarbeiten, Airless-Anstriche, Fassadenanstriche,
+            Trockenbau, Bodenverlegung und Renovierungsarbeiten – zuverlässig,
+            sauber und termingerecht.
           </p>
 
           <div className={styles.actions}>

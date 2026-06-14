@@ -1,7 +1,7 @@
 import { CheckCircle2 } from 'lucide-react';
 
 import styles from './AboutStory.module.css';
-import img from '../../assets/images/about-master.jpg';
+import img from '../../assets/images/about-master-story.webp';
 
 export default function AboutStory() {
   return (
@@ -10,14 +10,9 @@ export default function AboutStory() {
         <div className={styles.grid}>
           <div className={styles.media}>
             <picture>
-              {/* <source
-                srcSet="/img/about-story-mobile.webp"
-                media="(max-width: 620px)"
-                type="image/webp"
-              /> */}
               <img
                 src={img}
-                alt="Saubere Vorbereitung für Malerarbeiten im Innenraum"
+                alt="Serhii Drohaltsev bei Renovierungs- und Innenausbauarbeiten"
                 className={styles.image}
                 loading="lazy"
                 width="760"
@@ -30,33 +25,37 @@ export default function AboutStory() {
             <p className={styles.eyebrow}>Meine Geschichte</p>
 
             <h2 className={styles.title}>
-              Aus Erfahrung entsteht zuverlässige Qualität
+              Über 20 Jahre Erfahrung im Handwerk
             </h2>
 
             <p className={styles.text}>
-              Seit mehr als 10 Jahren arbeite ich im Bereich Malerarbeiten,
-              Renovierung und Fassadengestaltung. In dieser Zeit habe ich
-              gelernt, dass gute Handwerksarbeit nicht nur aus Technik besteht,
-              sondern auch aus Vertrauen, sauberer Kommunikation und einem
-              ehrlichen Blick für Details.
+              Seit über 20 Jahren arbeite ich im Bereich Renovierung,
+              Innenausbau und Modernisierung. In dieser Zeit habe ich zahlreiche
+              Projekte für Privatkunden und Unternehmen erfolgreich umgesetzt.
+              Dabei habe ich gelernt, dass hochwertige Handwerksarbeit nicht nur
+              Fachwissen erfordert, sondern auch Zuverlässigkeit, saubere
+              Kommunikation und Liebe zum Detail.
             </p>
 
             <p className={styles.text}>
-              Heute arbeite ich als selbstständiger Handwerker und begleite
-              jedes Projekt persönlich. Vom ersten Gespräch über die
-              Vorbereitung bis zur Fertigstellung wissen Sie genau, mit wem Sie
-              arbeiten.
+              Heute begleite ich jedes Projekt persönlich – von der ersten
+              Beratung bis zur Fertigstellung. Ob Spachtelarbeiten,
+              Airless-Anstriche, Trockenbau, Bodenverlegung oder
+              Renovierungsarbeiten: Sie wissen jederzeit genau, mit wem Sie
+              zusammenarbeiten.
             </p>
 
             <ul className={styles.list}>
               <li>
                 <CheckCircle2 size={19} />
-                Persönliche Betreuung statt anonymer Abwicklung
+                Persönliche Betreuung durch einen erfahrenen Handwerker
               </li>
+
               <li>
                 <CheckCircle2 size={19} />
-                Erfahrung mit Innenräumen, Fassaden und Renovierungen
+                Über 20 Jahre Erfahrung in Renovierung und Innenausbau
               </li>
+
               <li>
                 <CheckCircle2 size={19} />
                 Saubere Arbeitsweise und transparente Kommunikation

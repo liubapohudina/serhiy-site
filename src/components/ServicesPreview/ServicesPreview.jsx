@@ -1,44 +1,44 @@
 import {
   BadgeCheck,
-  ClipboardCheck,
-  Home,
+  Building2,
+  Hammer,
   Paintbrush,
-  Sparkles,
-  Wrench,
+  PanelsTopLeft,
+  Layers,
 } from 'lucide-react';
 
 import styles from './ServicesPreview.module.css';
 
 const services = [
   {
+    icon: Layers,
+    title: 'Spachtelarbeiten',
+    text: 'Professionelle Spachtelarbeiten für glatte und perfekt vorbereitete Oberflächen.',
+  },
+  {
     icon: Paintbrush,
-    title: 'Malerarbeiten',
-    text: 'Präzise Anstriche für Wände, Decken und Wohnräume.',
+    title: 'Airless-Anstriche',
+    text: 'Effiziente und gleichmäßige Beschichtungen mit moderner Airless-Technik.',
   },
   {
-    icon: Home,
+    icon: Building2,
     title: 'Fassadenanstriche',
-    text: 'Schutz und neues Erscheinungsbild für Ihre Immobilie.',
+    text: 'Witterungsbeständige Anstriche für den Schutz und die Aufwertung Ihrer Fassade.',
   },
   {
-    icon: Wrench,
-    title: 'Fassadensanierung',
-    text: 'Ausbesserungen und fachgerechte Sanierung von Fassaden.',
+    icon: PanelsTopLeft,
+    title: 'Trockenbau',
+    text: 'Errichtung von Trennwänden, Deckenverkleidungen und Innenausbauarbeiten.',
   },
   {
-    icon: Sparkles,
-    title: 'Innenrenovierung',
-    text: 'Saubere Renovierungsarbeiten für Wohnungen und Häuser.',
-  },
-  {
-    icon: ClipboardCheck,
-    title: 'Persönliche Beratung',
-    text: 'Direkter Kontakt und individuelle Lösungen für jedes Projekt.',
+    icon: Hammer,
+    title: 'Bodenverlegung',
+    text: 'Verlegung von Laminat, Vinyl und Parkett für Wohn- und Geschäftsräume.',
   },
   {
     icon: BadgeCheck,
-    title: 'Zuverlässige Ausführung',
-    text: 'Termintreue, Qualität und sauberes Arbeiten.',
+    title: 'Renovierungsarbeiten',
+    text: 'Komplette Renovierungsarbeiten mit sauberer und zuverlässiger Ausführung.',
   },
 ];
 
@@ -50,12 +50,13 @@ export default function ServicesPreview() {
           <p className={styles.eyebrow}>Meine Leistungen</p>
 
           <h2 className={styles.title}>
-            Professionelle Arbeiten für Innenräume und Fassaden
+            Spachtelarbeiten, Trockenbau, Bodenverlegung und Renovierung
           </h2>
 
           <p className={styles.text}>
-            Als selbstständiger Handwerker begleite ich Ihr Projekt persönlich —
-            von der Beratung bis zur sauberen Fertigstellung.
+            Ich unterstütze Sie bei Renovierungs- und Ausbauprojekten – von
+            Spachtelarbeiten und Airless-Anstrichen bis hin zu Trockenbau,
+            Bodenverlegung und Fassadenanstrichen.
           </p>
         </div>
 

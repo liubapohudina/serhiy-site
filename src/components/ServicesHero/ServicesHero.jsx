@@ -2,20 +2,18 @@ import { Link } from 'react-router';
 import { ArrowRight } from 'lucide-react';
 
 import styles from './ServicesHero.module.css';
-import img from '../../assets/video/poster.png';
+import img from '../../assets/images/hero-master.webp';
+import imgM from '../../assets/images/hero-master-mobile.webp';
 
 export default function ServicesHero() {
   return (
     <section className={styles.hero}>
       <picture>
-        {/* <source
-          srcSet="/img/services-hero-mobile.webp"
-          media="(max-width: 620px)"
-          type="image/webp"
-        /> */}
+        <source srcSet={imgM} media="(max-width: 620px)" type="image/webp" />
+
         <img
           src={img}
-          alt="Professionelle Malerarbeiten und Fassadenarbeiten"
+          alt="Spachtelarbeiten, Trockenbau und Renovierungsarbeiten"
           className={styles.image}
           width="1920"
           height="760"
@@ -26,16 +24,18 @@ export default function ServicesHero() {
 
       <div className="container">
         <div className={styles.content}>
-          <p className={styles.eyebrow}>Meine Leistungen</p>
+          <p className={styles.eyebrow}>
+            Spachtelarbeiten • Airless-Anstriche • Trockenbau
+          </p>
 
           <h1 className={styles.title}>
-            Professionelle Lösungen für Innenräume und Fassaden
+            Professionelle Renovierungsarbeiten und Innenausbau
           </h1>
 
           <p className={styles.text}>
-            Ich biete hochwertige Malerarbeiten, Innenanstriche,
-            Fassadenanstriche, Fassadensanierung und Renovierungsarbeiten —
-            persönlich, sauber und zuverlässig.
+            Mit über 20 Jahren Erfahrung biete ich Spachtelarbeiten,
+            Airless-Anstriche, Fassadenanstriche, Trockenbau, Bodenverlegung und
+            Renovierungsarbeiten für Wohnungen, Häuser und Gewerbeobjekte.
           </p>
 
           <Link to="/kontakt" className={styles.btn}>

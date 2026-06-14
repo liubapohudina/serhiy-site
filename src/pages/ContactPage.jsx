@@ -4,10 +4,10 @@ import ContactFormSection from '../components/ContactFormSection/ContactFormSect
 import ContactFaq from '../components/ContactFaq/ContactFaq.jsx';
 
 export function meta() {
-  const title = 'Kontakt | Serhii Drohaltsev Gebäudeservice & Renovierung';
+  const title = 'Kontakt | Renovierung & Innenausbau in Offenbach am Main';
 
   const description =
-    'Kontaktieren Sie Serhii Drohaltsev für Malerarbeiten, Fassadenanstriche, Fassadensanierung und Renovierungsarbeiten. Persönliche Beratung und unverbindliche Anfrage.';
+    'Jetzt unverbindlich anfragen. Über 20 Jahre Erfahrung in Spachtelarbeiten, Trockenbau, Bodenverlegung, Airless-Anstrichen und Renovierungsarbeiten in Offenbach am Main, Frankfurt und Umgebung.';
 
   return [
     { title },
@@ -21,7 +21,6 @@ export function meta() {
     },
   ];
 }
-
 export default function ContactPage() {
   return (
     <>

@@ -4,16 +4,20 @@ const UPDATED_AT = '13.06.2026';
 
 export function meta() {
   return [
-    { title: 'AGB | Serhii Drohaltsev Gebäudeservice & Renovierung' },
+    {
+      title: 'AGB | Serhii Drohaltsev Renovierung',
+    },
     {
       name: 'description',
       content:
-        'Allgemeine Geschäftsbedingungen für Leistungen von Serhii Drohaltsev Gebäudeservice & Renovierung.',
+        'Allgemeine Geschäftsbedingungen für Renovierungs-, Innenausbau- und Handwerksleistungen von Serhii Drohaltsev Renovierung.',
     },
-    { name: 'robots', content: 'noindex, follow' },
+    {
+      name: 'robots',
+      content: 'noindex, follow',
+    },
   ];
 }
-
 export default function TermsAndConditionsPage() {
   return (
     <div className={styles.page}>
@@ -22,9 +26,11 @@ export default function TermsAndConditionsPage() {
           <p className={styles.eyebrow}>Allgemeine Geschäftsbedingungen</p>
           <h1>AGB</h1>
           <p>
-            Bedingungen für Malerarbeiten, Fassadenarbeiten und
-            Renovierungsleistungen.
+            Bedingungen für Spachtelarbeiten, Airless-Anstriche,
+            Fassadenanstriche, Trockenbau, Bodenverlegung und
+            Renovierungsarbeiten.
           </p>
+
           <span>Stand: {UPDATED_AT}</span>
         </div>
       </section>
@@ -35,10 +41,10 @@ export default function TermsAndConditionsPage() {
             <h2>1. Geltungsbereich</h2>
             <p>
               Diese Allgemeinen Geschäftsbedingungen gelten für Leistungen von
-              Serhii Drohaltsev Gebäudeservice & Renovierung im Bereich
-              Malerarbeiten, Innenanstriche, Fassadenanstriche,
-              Fassadensanierung und Renovierungsarbeiten, sofern nicht
-              schriftlich etwas anderes vereinbart wurde.
+              Serhii Drohaltsev Renovierung im Bereich Spachtelarbeiten,
+              Airless-Anstriche, Fassadenanstriche, Trockenbau, Bodenverlegung
+              und Renovierungsarbeiten, sofern nicht schriftlich etwas anderes
+              vereinbart wurde.
             </p>
 
             <h2>2. Angebot und Vertragsschluss</h2>
@@ -115,8 +121,8 @@ export default function TermsAndConditionsPage() {
             <h2>11. Eigentumsvorbehalt</h2>
             <p>
               Gelieferte Materialien bleiben bis zur vollständigen Bezahlung der
-              jeweiligen Rechnung Eigentum von Serhii Drohaltsev Gebäudeservice
-              & Renovierung, soweit dies rechtlich zulässig ist.
+              jeweiligen Rechnung Eigentum von Serhii Drohaltsev Renovierung,
+              soweit dies rechtlich zulässig ist.
             </p>
 
             <h2>12. Datenschutz</h2>
@@ -132,15 +138,6 @@ export default function TermsAndConditionsPage() {
               Es gilt deutsches Recht. Sollten einzelne Bestimmungen dieser AGB
               unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen
               unberührt.
-            </p>
-
-            <h2>14. Hinweis</h2>
-            <p>
-              Diese AGB sind auf ein kleines handwerkliches
-              Dienstleistungsangebot zugeschnitten. Vor endgültiger
-              Veröffentlichung empfiehlt sich eine Prüfung durch eine
-              fachkundige Stelle, insbesondere wenn feste Werkverträge,
-              Subunternehmer oder größere Bauprojekte geplant sind.
             </p>
           </div>
         </div>

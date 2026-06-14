@@ -4,13 +4,12 @@ import AboutPreview from '../components/AboutPreview/AboutPreview';
 import ProjectsPreview from '../components/ProjectsPreview/ProjectsPreview';
 import ProcessPreview from '../components/ProcessPreview/ProcessPreview';
 import CtaSection from '../components/CtaSection/CtaSection';
-
 export function meta() {
   const title =
-    'Serhii Drohaltsev Gebäudeservice & Renovierung | Maler- und Fassadenarbeiten';
+    'Serhii Drohaltsev Renovierung | Spachtelarbeiten, Airless-Anstriche & Trockenbau';
 
   const description =
-    'Professionelle Malerarbeiten, Fassadenanstriche, Fassadensanierung und Renovierungsarbeiten. Zuverlässige Handwerksleistungen, saubere Ausführung und individuelle Beratung für Wohnungen und Häuser in Deutschland.';
+    'Professionelle Spachtelarbeiten, Airless-Anstriche, Fassadenanstriche, Trockenbau, Bodenverlegung und Renovierungsarbeiten. Saubere Ausführung, faire Preise und zuverlässiger Service für Wohnungen, Häuser und Gewerbeobjekte in Deutschland.';
 
   const url = 'https://your-domain.de';
 
@@ -34,17 +33,17 @@ export function meta() {
     {
       name: 'keywords',
       content:
-        'Malerarbeiten, Fassadenarbeiten, Fassadenanstrich, Fassadensanierung, Innenanstrich, Renovierungsarbeiten, Gebäudeservice, Malerbetrieb Deutschland, Hausrenovierung, Wandgestaltung, Fassadenrenovierung, Tapezierarbeiten, Spachtelarbeiten, Serhii Drohaltsev',
+        'Spachtelarbeiten, Airless-Anstriche, Fassadenanstriche, Fassadenarbeiten, Renovierungsarbeiten, Trockenbau, Bodenverlegung, Innenausbau, Wandspachtelung, Airless Spritzverfahren, Fassadensanierung, Bodenbeläge, Laminat verlegen, Vinylboden verlegen, Gebäudeservice Deutschland, Serhii Drohaltsev',
     },
 
     {
       name: 'author',
-      content: 'Serhii Drohaltsev Gebäudeservice & Renovierung',
+      content: 'Serhii Drohaltsev Renovierung',
     },
 
     {
       name: 'publisher',
-      content: 'Serhii Drohaltsev Gebäudeservice & Renovierung',
+      content: 'Serhii Drohaltsev Renovierung',
     },
 
     {
@@ -77,7 +76,7 @@ export function meta() {
 
     {
       property: 'og:site_name',
-      content: 'Serhii Drohaltsev Gebäudeservice & Renovierung',
+      content: 'Serhii Drohaltsev Renovierung',
     },
 
     {
@@ -113,7 +112,7 @@ export function meta() {
     {
       property: 'og:image:alt',
       content:
-        'Serhii Drohaltsev Gebäudeservice & Renovierung – Maler- und Fassadenarbeiten',
+        'Spachtelarbeiten, Airless-Anstriche, Trockenbau und Renovierungsarbeiten',
     },
 
     {
@@ -143,11 +142,10 @@ export function meta() {
 
     {
       name: 'twitter:image:alt',
-      content: 'Professionelle Maler- und Fassadenarbeiten in Deutschland',
+      content: 'Professionelle Spachtelarbeiten, Trockenbau und Bodenverlegung',
     },
   ];
 }
-
 export default function HomePage() {
   return (
     <>

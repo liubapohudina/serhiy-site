@@ -1,45 +1,45 @@
-import { BadgeCheck, Brush, Home, ShieldCheck } from 'lucide-react';
+import { BadgeCheck, Hammer, Layers, ShieldCheck } from 'lucide-react';
 
 import styles from './AboutExperience.module.css';
 
 const timeline = [
   {
-    year: '10+',
+    year: '20+',
     title: 'Jahre Erfahrung',
-    text: 'Praktische Erfahrung mit Malerarbeiten, Fassaden und Renovierungsprojekten.',
+    text: 'Langjährige Erfahrung im Bereich Renovierung, Innenausbau und Modernisierung.',
   },
   {
     year: '100%',
     title: 'Persönliche Betreuung',
-    text: 'Jedes Projekt wird direkt von mir begleitet und abgestimmt.',
+    text: 'Jedes Projekt wird direkt von mir geplant, begleitet und umgesetzt.',
   },
   {
     year: '1',
     title: 'Fester Ansprechpartner',
-    text: 'Keine wechselnden Kontakte — Sie sprechen direkt mit dem Handwerker.',
+    text: 'Direkter Kontakt ohne Vermittler oder wechselnde Ansprechpartner.',
   },
 ];
 
 const skills = [
   {
-    icon: Brush,
-    title: 'Malerarbeiten',
-    text: 'Innenanstriche, Decken, Wände und saubere Oberflächen.',
+    icon: Layers,
+    title: 'Spachtelarbeiten',
+    text: 'Professionelle Vorbereitung von Wänden und Decken für perfekte Oberflächen.',
   },
   {
-    icon: Home,
-    title: 'Fassaden',
-    text: 'Fassadenanstriche, Schutzbeschichtungen und Sanierungsarbeiten.',
+    icon: Hammer,
+    title: 'Trockenbau & Bodenverlegung',
+    text: 'Innenausbau sowie Verlegung von Laminat, Vinyl und Parkett.',
   },
   {
     icon: ShieldCheck,
-    title: 'Qualität',
-    text: 'Ordentliche Vorbereitung und langlebige Ausführung.',
+    title: 'Qualität & Langlebigkeit',
+    text: 'Hochwertige Materialien und sorgfältige Ausführung für dauerhafte Ergebnisse.',
   },
   {
     icon: BadgeCheck,
     title: 'Zuverlässigkeit',
-    text: 'Klare Absprachen, faire Kommunikation und Termintreue.',
+    text: 'Klare Kommunikation, faire Beratung und termingerechte Umsetzung.',
   },
 ];
 
@@ -50,11 +50,15 @@ export default function AboutExperience() {
         <div className={styles.head}>
           <p className={styles.eyebrow}>Erfahrung & Arbeitsweise</p>
 
-          <h2 className={styles.title}>Handwerk, das persönlich bleibt</h2>
+          <h2 className={styles.title}>
+            Über 20 Jahre Erfahrung im Renovierungs- und Innenausbaubereich
+          </h2>
 
           <p className={styles.text}>
-            Ich lege Wert auf klare Beratung, saubere Vorbereitung und eine
-            Ausführung, die nicht nur gut aussieht, sondern auch lange hält.
+            Mein Ziel ist es, jedes Projekt mit hoher Qualität, persönlicher
+            Betreuung und sauberer Ausführung umzusetzen. Dabei stehen
+            Zuverlässigkeit, Transparenz und langlebige Ergebnisse im
+            Mittelpunkt.
           </p>
         </div>
 

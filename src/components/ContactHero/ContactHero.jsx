@@ -1,22 +1,17 @@
-import { Link } from 'react-router';
 import { ArrowRight, Phone } from 'lucide-react';
 
 import styles from './ContactHero.module.css';
-import img from '../../assets/video/poster.png';
+import img from '../../assets/images/hero-master.webp';
+import imgM from '../../assets/images/hero-master-mobile.webp';
 
 export default function ContactHero() {
   return (
     <section className={styles.hero}>
       <picture>
-        {/* <source
-          srcSet="/img/contact-hero-mobile.webp"
-          media="(max-width: 620px)"
-          type="image/webp"
-        /> */}
-
+        <source srcSet={imgM} media="(max-width: 620px)" type="image/webp" />
         <img
           src={img}
-          alt="Kontakt für professionelle Malerarbeiten und Fassadenarbeiten"
+          alt="Kontakt für Renovierungsarbeiten und Innenausbau in Offenbach am Main"
           className={styles.image}
           width="1920"
           height="680"
@@ -34,8 +29,9 @@ export default function ContactHero() {
           </h1>
 
           <p className={styles.text}>
-            Sie planen Malerarbeiten, einen Fassadenanstrich oder eine
-            Renovierung? Kontaktieren Sie mich für eine unverbindliche Beratung.
+            Sie planen Spachtelarbeiten, Trockenbau, Bodenverlegung,
+            Airless-Anstriche oder eine Renovierung? Kontaktieren Sie mich für
+            eine persönliche und unverbindliche Beratung.
           </p>
 
           <div className={styles.actions}>
@@ -44,9 +40,9 @@ export default function ContactHero() {
               <ArrowRight size={19} />
             </a>
 
-            <a href="tel:+4917612345678" className={styles.secondaryBtn}>
+            <a href="tel:+4915256507271" className={styles.secondaryBtn}>
               <Phone size={18} />
-              Telefonisch kontaktieren
+              +49 152 56507271
             </a>
           </div>
         </div>

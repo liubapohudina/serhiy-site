@@ -8,15 +8,9 @@ export default function CtaSection() {
   return (
     <section className={styles.section}>
       <picture>
-        {/* <source
-          srcSet="/img/cta-mobile.webp"
-          media="(max-width: 620px)"
-          type="image/webp"
-        /> */}
-
         <img
           src={img}
-          alt="Modern renovierter Wohnraum nach professionellen Malerarbeiten"
+          alt="Professionelle Renovierungsarbeiten und Innenausbau"
           className={styles.image}
           loading="lazy"
           width="1920"
@@ -29,20 +23,22 @@ export default function CtaSection() {
       <div className="container">
         <div className={styles.content}>
           <div>
-            <p className={styles.eyebrow}>Kostenlose Beratung</p>
+            <p className={styles.eyebrow}>Kostenlose Beratung & Angebot</p>
 
             <h2 className={styles.title}>
-              Planen Sie Maler- oder Fassadenarbeiten?
+              Planen Sie eine Renovierung oder einen Innenausbau?
             </h2>
 
             <p className={styles.text}>
-              Lassen Sie uns Ihr Projekt gemeinsam besprechen und die passende
-              Lösung für Ihr Zuhause finden.
+              Kontaktieren Sie mich für Spachtelarbeiten, Airless-Anstriche,
+              Trockenbau, Bodenverlegung, Fassadenanstriche und
+              Renovierungsarbeiten. Ich berate Sie gerne persönlich und
+              unverbindlich.
             </p>
           </div>
 
           <Link to="/kontakt" className={styles.btn}>
-            Kontakt aufnehmen
+            Jetzt Kontakt aufnehmen
             <ArrowRight size={18} />
           </Link>
         </div>

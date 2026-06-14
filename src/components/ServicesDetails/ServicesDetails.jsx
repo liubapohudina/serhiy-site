@@ -7,48 +7,48 @@ import img3 from '../../assets/images/project-3.jpg';
 
 const services = [
   {
-    title: 'Malerarbeiten',
-    subtitle: 'Saubere Anstriche für Innenräume',
-    text: 'Ich übernehme präzise Malerarbeiten für Wohnungen, Häuser und einzelne Räume. Der Fokus liegt auf sauberer Vorbereitung, hochwertigen Materialien und einem Ergebnis, das langfristig überzeugt.',
+    title: 'Spachtelarbeiten & Airless-Anstriche',
+    subtitle: 'Glatte Oberflächen und gleichmäßige Beschichtungen',
+    text: 'Ich übernehme professionelle Spachtelarbeiten und Airless-Anstriche für Wohnungen, Häuser und Gewerbeobjekte. Der Fokus liegt auf sauberer Vorbereitung, präziser Ausführung und hochwertigen Ergebnissen.',
     image: img1,
     imageMobile: img1,
-    alt: 'Malerarbeiten im Innenraum mit sauber gestrichenen Wänden',
+    alt: 'Professionelle Spachtelarbeiten und Airless-Anstriche im Innenraum',
     points: [
-      'Innenanstriche',
-      'Deckenanstriche',
-      'Wandgestaltung',
-      'Renovierungsanstriche',
-      'Saubere Vorbereitung der Flächen',
+      'Spachtelarbeiten an Wänden und Decken',
+      'Vorbereitung der Oberflächen',
+      'Airless-Anstriche',
+      'Gleichmäßige Beschichtungen',
+      'Saubere Abdeckung und Ausführung',
     ],
   },
   {
-    title: 'Fassadenarbeiten',
-    subtitle: 'Schutz und neues Erscheinungsbild',
-    text: 'Eine gepflegte Fassade schützt Ihr Gebäude und sorgt für einen hochwertigen ersten Eindruck. Ich führe Fassadenanstriche und vorbereitende Arbeiten sorgfältig und wetterbeständig aus.',
+    title: 'Trockenbau & Bodenverlegung',
+    subtitle: 'Innenausbau für Wohn- und Geschäftsräume',
+    text: 'Ich unterstütze Sie beim Innenausbau mit Trockenbauarbeiten und Bodenverlegung. Verlegt werden Laminat, Vinyl und Parkett — keine Fliesenarbeiten.',
     image: img2,
     imageMobile: img2,
-    alt: 'Professionell gestrichene Hausfassade nach Fassadenarbeiten',
+    alt: 'Trockenbau und Bodenverlegung mit Laminat Vinyl und Parkett',
+    points: [
+      'Trockenbauarbeiten',
+      'Trennwände und Deckenverkleidungen',
+      'Laminatverlegung',
+      'Vinylbodenverlegung',
+      'Parkettverlegung',
+    ],
+  },
+  {
+    title: 'Fassadenanstriche & Renovierungsarbeiten',
+    subtitle: 'Schutz, Modernisierung und saubere Umsetzung',
+    text: 'Ob Fassadenanstrich oder komplette Renovierung: Ich begleite Ihr Projekt persönlich und setze die Arbeiten zuverlässig, termingerecht und mit über 20 Jahren Erfahrung um.',
+    image: img3,
+    imageMobile: img3,
+    alt: 'Fassadenanstrich und Renovierungsarbeiten an einem Wohnhaus',
     points: [
       'Fassadenanstriche',
       'Wetterbeständige Beschichtungen',
-      'Farbberatung',
-      'Ausbesserungsarbeiten',
-      'Schutz vor Witterungseinflüssen',
-    ],
-  },
-  {
-    title: 'Fassadensanierung & Renovierung',
-    subtitle: 'Sorgfältige Erneuerung mit persönlicher Betreuung',
-    text: 'Ob kleinere Ausbesserungen oder komplette Renovierung: Ich begleite Ihr Projekt persönlich und achte auf eine ordentliche, zuverlässige und termingerechte Umsetzung.',
-    image: img3,
-    imageMobile: img3,
-    alt: 'Renovierungsarbeiten und Fassadensanierung an einem Wohnhaus',
-    points: [
-      'Fassadensanierung',
-      'Wohnungsrenovierung',
-      'Hausrenovierung',
-      'Spachtel- und Vorarbeiten',
-      'Termingerechte Fertigstellung',
+      'Renovierungsarbeiten',
+      'Modernisierung von Wohnungen und Häusern',
+      'Persönliche Betreuung durch Serhii Drohaltsev',
     ],
   },
 ];
@@ -61,13 +61,13 @@ export default function ServicesDetails() {
           <p className={styles.eyebrow}>Leistungsbereiche</p>
 
           <h2 className={styles.title}>
-            Maler- und Fassadenarbeiten aus einer Hand
+            Spachtelarbeiten, Trockenbau, Bodenverlegung und Renovierung
           </h2>
 
           <p className={styles.text}>
-            Als selbstständiger Handwerker bin ich Ihr direkter Ansprechpartner.
-            Ich plane und realisiere jedes Projekt persönlich — ohne unnötige
-            Umwege.
+            Als selbstständiger Handwerker mit über 20 Jahren Erfahrung bin ich
+            Ihr direkter Ansprechpartner für Renovierungsarbeiten und
+            Innenausbau in Offenbach am Main und Umgebung.
           </p>
         </div>
 

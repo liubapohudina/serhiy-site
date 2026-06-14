@@ -4,10 +4,10 @@ import CtaSection from '../components/CtaSection/CtaSection.jsx';
 
 export function meta() {
   const title =
-    'Projekte | Malerarbeiten & Fassadenarbeiten | Serhii Drohaltsev';
+    'Referenzen & Projekte | Renovierung, Trockenbau & Bodenverlegung';
 
   const description =
-    'Einblicke in abgeschlossene Malerarbeiten, Fassadenanstriche, Fassadensanierungen und Renovierungsarbeiten von Serhii Drohaltsev.';
+    'Einblicke in abgeschlossene Projekte aus den Bereichen Spachtelarbeiten, Airless-Anstriche, Fassadenanstriche, Trockenbau, Bodenverlegung und Renovierungsarbeiten. Über 20 Jahre Erfahrung und professionelle Ausführung.';
 
   return [
     { title },

@@ -8,17 +8,17 @@ const topBarItems = [
   },
   {
     icon: Phone,
-    text: '+49 176 12345678',
-    href: 'tel:+4917612345678',
+    text: '+49 152 56507271',
+    href: 'tel:+4915256507271',
   },
   {
     icon: Mail,
-    text: 'info@meisterarbeiten.de',
-    href: 'mailto:info@meisterarbeiten.de',
+    text: 'remontprof3110@gmail.com',
+    href: 'mailto:remontprof3110@gmail.com',
   },
   {
     icon: MapPin,
-    text: 'Musterstraße 12, 12345 Musterstadt',
+    text: 'Lilienthalstraße 16,63073 Offenbach am Main',
   },
 ];
 

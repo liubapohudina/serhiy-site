@@ -5,18 +5,19 @@ const UPDATED_AT = '13.06.2026';
 export function meta() {
   return [
     {
-      title:
-        'Cookie-Richtlinie | Serhii Drohaltsev Gebäudeservice & Renovierung',
+      title: 'Cookie-Richtlinie | Serhii Drohaltsev Renovierung',
     },
     {
       name: 'description',
       content:
-        'Cookie-Richtlinie der Website von Serhii Drohaltsev Gebäudeservice & Renovierung.',
+        'Cookie-Richtlinie der Website von Serhii Drohaltsev Renovierung in Offenbach am Main.',
     },
-    { name: 'robots', content: 'noindex, follow' },
+    {
+      name: 'robots',
+      content: 'noindex, follow',
+    },
   ];
 }
-
 export default function CookiesPolicyPage() {
   return (
     <div className={styles.page}>
@@ -24,10 +25,13 @@ export default function CookiesPolicyPage() {
         <div className="container">
           <p className={styles.eyebrow}>Cookie-Hinweise</p>
           <h1>Cookie-Richtlinie</h1>
+
           <p>
             Informationen darüber, welche Cookies und ähnliche Technologien auf
-            dieser Website verwendet werden.
+            dieser Website verwendet werden und wie Sie Ihre Einwilligung
+            verwalten können.
           </p>
+
           <span>Stand: {UPDATED_AT}</span>
         </div>
       </section>

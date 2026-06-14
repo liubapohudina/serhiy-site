@@ -8,25 +8,22 @@ import img3 from '../../assets/images/project-3.jpg';
 
 const projects = [
   {
-    title: 'Innenanstrich',
-    text: 'Saubere Wand- und Deckenanstriche für helle, gepflegte Wohnräume.',
+    title: 'Spachtelarbeiten',
+    text: 'Professionell vorbereitete Wand- und Deckenflächen für hochwertige Endbeschichtungen.',
     image: img1,
-    // imageMobile: '/img/project-1-mobile.webp',
-    alt: 'Frisch gestrichener heller Wohnraum nach professionellen Malerarbeiten',
+    alt: 'Professionelle Spachtelarbeiten an Wänden und Decken',
   },
   {
     title: 'Fassadenanstrich',
-    text: 'Neuer Schutz und modernes Erscheinungsbild für die Außenfassade.',
+    text: 'Witterungsbeständiger Fassadenanstrich für Schutz und ein modernes Erscheinungsbild.',
     image: img2,
-    // imageMobile: '/img/project-2-mobile.webp',
-    alt: 'Modernisierte Hausfassade nach professionellem Fassadenanstrich',
+    alt: 'Modernisierte Hausfassade nach Fassadenanstrich',
   },
   {
-    title: 'Fassadensanierung',
-    text: 'Ausbesserung, Vorbereitung und saubere Beschichtung der Fassade.',
+    title: 'Trockenbau & Renovierung',
+    text: 'Innenausbau, Renovierungsarbeiten und saubere Umsetzung individueller Projekte.',
     image: img3,
-    // imageMobile: '/img/project-3-mobile.webp',
-    alt: 'Sanierte Fassade eines Wohnhauses nach Renovierungsarbeiten',
+    alt: 'Trockenbau- und Renovierungsarbeiten im Innenbereich',
   },
 ];
 
@@ -37,13 +34,13 @@ export default function ProjectsPreview() {
 
       <div className="container">
         <div className={styles.head}>
-          <p className={styles.eyebrow}>Projekte</p>
+          <p className={styles.eyebrow}>Referenzen</p>
 
-          <h2 className={styles.title}>Einblicke in abgeschlossene Arbeiten</h2>
+          <h2 className={styles.title}>Einblicke in abgeschlossene Projekte</h2>
 
           <p className={styles.text}>
-            Eine kleine Auswahl typischer Arbeiten aus dem Bereich
-            Malerarbeiten, Fassadenanstriche und Renovierung.
+            Beispiele aus den Bereichen Spachtelarbeiten, Fassadenanstriche,
+            Trockenbau, Bodenverlegung und Renovierungsarbeiten.
           </p>
         </div>
 
@@ -51,11 +48,6 @@ export default function ProjectsPreview() {
           {projects.map((project) => (
             <article key={project.title} className={styles.card}>
               <picture>
-                {/* <source
-                  srcSet={project.imageMobile}
-                  media="(max-width: 620px)"
-                  type="image/webp"
-                /> */}
                 <img
                   src={project.image}
                   alt={project.alt}
