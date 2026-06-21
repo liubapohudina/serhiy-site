@@ -1,9 +1,9 @@
 import { CheckCircle2 } from 'lucide-react';
 
 import styles from './ServicesDetails.module.css';
-import img1 from '../../assets/images/project-1.jpg';
-import img2 from '../../assets/images/project-2.jpg';
-import img3 from '../../assets/images/project-3.jpg';
+import img1 from '../../assets/images/ceiling-1.webp';
+import img2 from '../../assets/images/decor-1.webp';
+import img3 from '../../assets/images/facade-1.webp';
 
 const services = [
   {
