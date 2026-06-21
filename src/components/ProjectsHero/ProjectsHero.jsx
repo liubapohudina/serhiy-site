@@ -10,7 +10,7 @@ export default function ProjectsHero() {
 
         <img
           src={img}
-          alt="Galerie abgeschlossener Malerarbeiten und Fassadenarbeiten"
+          alt="Ausgewählte Arbeiten aus Fassaden, Decken und dekorativer Gestaltung"
           className={styles.image}
           width="1920"
           height="680"
@@ -21,13 +21,16 @@ export default function ProjectsHero() {
 
       <div className="container">
         <div className={styles.content}>
-          <p className={styles.eyebrow}>Projekte</p>
+          <p className={styles.eyebrow}>Referenzen</p>
 
-          <h1 className={styles.title}>Einblicke in abgeschlossene Arbeiten</h1>
+          <h1 className={styles.title}>
+            Handwerkliche Qualität, die man sieht
+          </h1>
 
           <p className={styles.text}>
-            Eine Auswahl meiner Arbeiten aus den Bereichen Malerarbeiten,
-            Fassadenanstriche, Fassadensanierung und Renovierung.
+            Entdecken Sie ausgewählte Arbeiten aus den Bereichen Fassaden,
+            Decken und dekorative Gestaltung — sauber ausgeführt, langlebig und
+            mit Blick fürs Detail.
           </p>
         </div>
       </div>
