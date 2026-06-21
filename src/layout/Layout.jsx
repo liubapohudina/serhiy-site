@@ -5,6 +5,7 @@ import Header from '../components/Header/Header.jsx';
 import Footer from '../components/Footer/Footer.jsx';
 import Loader from '../components/Loader/Loader.jsx';
 import CookieBanner from '../components/CookieBanner/CookieBanner.jsx';
+import WhatsAppPopup from '../components/WhatsAppPopup/WhatsAppPopup.jsx';
 
 export default function Layout() {
   const navigation = useNavigation();
@@ -30,7 +31,7 @@ export default function Layout() {
 
         <Footer />
       </div>
-
+      <WhatsAppPopup />
       <CookieBanner />
     </>
   );
