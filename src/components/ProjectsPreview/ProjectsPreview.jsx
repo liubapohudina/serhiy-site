@@ -2,28 +2,37 @@ import { Link } from 'react-router';
 import { ArrowRight } from 'lucide-react';
 
 import styles from './ProjectsPreview.module.css';
-import img1 from '../../assets/images/project-1.jpg';
-import img2 from '../../assets/images/project-2.jpg';
-import img3 from '../../assets/images/project-3.jpg';
+
+import facadeDesktop from '../../assets/images/facade-desktop.webp';
+import facadeMobile from '../../assets/images/facade-mobile.webp';
+
+import ceilingDesktop from '../../assets/images/ceiling-desktop.webp';
+import ceilingMobile from '../../assets/images/ceiling-mobile.webp';
+
+import decorDesktop from '../../assets/images/decor-desktop.webp';
+import decorMobile from '../../assets/images/decor-mobile.webp';
 
 const projects = [
   {
-    title: 'Spachtelarbeiten',
-    text: 'Professionell vorbereitete Wand- und Deckenflächen für hochwertige Endbeschichtungen.',
-    image: img1,
-    alt: 'Professionelle Spachtelarbeiten an Wänden und Decken',
+    title: 'Fassadenarbeiten',
+    text: 'Professionelle Fassadengestaltung, langlebige Beschichtungen und moderne Optik.',
+    imageDesktop: facadeDesktop,
+    imageMobile: facadeMobile,
+    alt: 'Renovierte und modernisierte Hausfassade',
   },
   {
-    title: 'Fassadenanstrich',
-    text: 'Witterungsbeständiger Fassadenanstrich für Schutz und ein modernes Erscheinungsbild.',
-    image: img2,
-    alt: 'Modernisierte Hausfassade nach Fassadenanstrich',
+    title: 'Deckengestaltung',
+    text: 'Spanndecken, Trockenbau-Decken und kreative Lösungen für jeden Raum.',
+    imageDesktop: ceilingDesktop,
+    imageMobile: ceilingMobile,
+    alt: 'Moderne Deckengestaltung mit Beleuchtung',
   },
   {
-    title: 'Trockenbau & Renovierung',
-    text: 'Innenausbau, Renovierungsarbeiten und saubere Umsetzung individueller Projekte.',
-    image: img3,
-    alt: 'Trockenbau- und Renovierungsarbeiten im Innenbereich',
+    title: 'Dekorative Oberflächen',
+    text: 'Strukturputz, dekorative Beschichtungen und individuelle Wandgestaltung.',
+    imageDesktop: decorDesktop,
+    imageMobile: decorMobile,
+    alt: 'Dekorative Wandoberfläche mit Struktur',
   },
 ];
 
@@ -39,8 +48,8 @@ export default function ProjectsPreview() {
           <h2 className={styles.title}>Einblicke in abgeschlossene Projekte</h2>
 
           <p className={styles.text}>
-            Beispiele aus den Bereichen Spachtelarbeiten, Fassadenanstriche,
-            Trockenbau, Bodenverlegung und Renovierungsarbeiten.
+            Beispiele aus den Bereichen Fassadenarbeiten, Deckengestaltung und
+            dekorativen Oberflächen.
           </p>
         </div>
 
@@ -48,8 +57,19 @@ export default function ProjectsPreview() {
           {projects.map((project) => (
             <article key={project.title} className={styles.card}>
               <picture>
+                <source
+                  srcSet={project.imageMobile}
+                  media="(max-width: 600px)"
+                  type="image/webp"
+                />
+                <source
+                  srcSet={project.imageDesktop}
+                  media="(min-width: 601px)"
+                  type="image/webp"
+                />
+
                 <img
-                  src={project.image}
+                  src={project.imageDesktop}
                   alt={project.alt}
                   className={styles.image}
                   loading="lazy"

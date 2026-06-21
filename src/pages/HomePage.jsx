@@ -2,6 +2,7 @@ import Hero from '../components/Hero/Hero';
 import ServicesPreview from '../components/ServicesPreview/ServicesPreview';
 import AboutPreview from '../components/AboutPreview/AboutPreview';
 import ProjectsPreview from '../components/ProjectsPreview/ProjectsPreview';
+import BeforeAfter from '../components/BeforeAfter/BeforeAfter';
 import ProcessPreview from '../components/ProcessPreview/ProcessPreview';
 import CtaSection from '../components/CtaSection/CtaSection';
 export function meta() {
@@ -153,6 +154,7 @@ export default function HomePage() {
       <ServicesPreview />
       <AboutPreview />
       <ProjectsPreview />
+      <BeforeAfter />
       <ProcessPreview />
       <CtaSection />
     </>
