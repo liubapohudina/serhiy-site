@@ -99,7 +99,9 @@
   .content {
     padding: 72px 0;
   }
-
+  .image {
+    height: stretch;
+  }
   .btn {
     width: 100%;
   }

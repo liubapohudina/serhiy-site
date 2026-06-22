@@ -131,7 +131,9 @@
   .secondaryBtn {
     width: 100%;
   }
-
+  .image {
+    height: stretch;
+  }
   .text {
     font-size: 16px;
   }

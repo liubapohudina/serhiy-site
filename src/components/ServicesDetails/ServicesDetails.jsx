@@ -7,48 +7,48 @@ import img3 from '../../assets/images/facade-1.webp';
 
 const services = [
   {
-    title: 'Spachtelarbeiten & Airless-Anstriche',
-    subtitle: 'Glatte Oberflächen und gleichmäßige Beschichtungen',
-    text: 'Ich übernehme professionelle Spachtelarbeiten und Airless-Anstriche für Wohnungen, Häuser und Gewerbeobjekte. Der Fokus liegt auf sauberer Vorbereitung, präziser Ausführung und hochwertigen Ergebnissen.',
+    title: 'Deckengestaltung & moderne Deckensysteme',
+    subtitle: 'Individuelle Lösungen für Wohn- und Geschäftsräume',
+    text: 'Ich gestalte Decken mit modernen Trockenbausystemen, Spanndecken und kreativen Konstruktionen. Jede Lösung wird präzise umgesetzt und an den Raum angepasst.',
     image: img1,
     imageMobile: img1,
-    alt: 'Professionelle Spachtelarbeiten und Airless-Anstriche im Innenraum',
+    alt: 'Moderne Deckengestaltung und Trockenbaudecken',
     points: [
-      'Spachtelarbeiten an Wänden und Decken',
-      'Vorbereitung der Oberflächen',
-      'Airless-Anstriche',
-      'Gleichmäßige Beschichtungen',
-      'Saubere Abdeckung und Ausführung',
+      'Trockenbau-Decken',
+      'Spanndecken',
+      'Integrierte Beleuchtung',
+      'Abgehängte Decken',
+      'Individuelle Deckenkonstruktionen',
     ],
   },
   {
-    title: 'Trockenbau & Bodenverlegung',
-    subtitle: 'Innenausbau für Wohn- und Geschäftsräume',
-    text: 'Ich unterstütze Sie beim Innenausbau mit Trockenbauarbeiten und Bodenverlegung. Verlegt werden Laminat, Vinyl und Parkett — keine Fliesenarbeiten.',
+    title: 'Dekorative Wand- und Oberflächengestaltung',
+    subtitle: 'Hochwertige dekorative Techniken für einzigartige Räume',
+    text: 'Ich biete dekorative Beschichtungen, Strukturputz und moderne Wandtechniken an. Jede Oberfläche wird sorgfältig vorbereitet und handwerklich präzise ausgeführt.',
     image: img2,
     imageMobile: img2,
-    alt: 'Trockenbau und Bodenverlegung mit Laminat Vinyl und Parkett',
+    alt: 'Dekorative Wandgestaltung und Strukturputz',
     points: [
-      'Trockenbauarbeiten',
-      'Trennwände und Deckenverkleidungen',
-      'Laminatverlegung',
-      'Vinylbodenverlegung',
-      'Parkettverlegung',
+      'Dekorative Beschichtungen',
+      'Strukturputz',
+      'Moderne Wandtechniken',
+      'Individuelle Designs',
+      'Hochwertige Materialien',
     ],
   },
   {
-    title: 'Fassadenanstriche & Renovierungsarbeiten',
-    subtitle: 'Schutz, Modernisierung und saubere Umsetzung',
-    text: 'Ob Fassadenanstrich oder komplette Renovierung: Ich begleite Ihr Projekt persönlich und setze die Arbeiten zuverlässig, termingerecht und mit über 20 Jahren Erfahrung um.',
+    title: 'Fassadenarbeiten & Außenrenovierung',
+    subtitle: 'Schutz, Modernisierung und langlebige Ergebnisse',
+    text: 'Ich übernehme Fassadenanstriche, Reparaturen und Modernisierungen für Wohn- und Gewerbeobjekte. Ziel ist eine langlebige, wetterbeständige und optisch ansprechende Fassade.',
     image: img3,
     imageMobile: img3,
-    alt: 'Fassadenanstrich und Renovierungsarbeiten an einem Wohnhaus',
+    alt: 'Professionelle Fassadenarbeiten und Außenrenovierung',
     points: [
       'Fassadenanstriche',
       'Wetterbeständige Beschichtungen',
-      'Renovierungsarbeiten',
-      'Modernisierung von Wohnungen und Häusern',
-      'Persönliche Betreuung durch Serhii Drohaltsev',
+      'Reparatur und Ausbesserung',
+      'Modernisierung von Fassaden',
+      'Saubere und zuverlässige Umsetzung',
     ],
   },
 ];
@@ -61,13 +61,13 @@ export default function ServicesDetails() {
           <p className={styles.eyebrow}>Leistungsbereiche</p>
 
           <h2 className={styles.title}>
-            Spachtelarbeiten, Trockenbau, Bodenverlegung und Renovierung
+            Fassaden, Decken und dekorative Oberflächen
           </h2>
 
           <p className={styles.text}>
-            Als selbstständiger Handwerker mit über 20 Jahren Erfahrung bin ich
-            Ihr direkter Ansprechpartner für Renovierungsarbeiten und
-            Innenausbau in Offenbach am Main und Umgebung.
+            Als selbstständiger Handwerker mit über 20 Jahren Erfahrung biete
+            ich hochwertige Fassadenarbeiten, moderne Deckensysteme und
+            dekorative Oberflächengestaltung für Wohn- und Gewerbeobjekte.
           </p>
         </div>
 

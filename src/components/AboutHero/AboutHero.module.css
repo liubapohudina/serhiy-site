@@ -128,7 +128,9 @@
     flex-direction: column;
     align-items: flex-start;
   }
-
+  .image {
+    height: stretch;
+  }
   .btn {
     width: 100%;
   }

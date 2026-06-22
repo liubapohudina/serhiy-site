@@ -13,7 +13,7 @@ export default function ServicesHero() {
 
         <img
           src={img}
-          alt="Spachtelarbeiten, Trockenbau und Renovierungsarbeiten"
+          alt="Fassadenarbeiten, Deckengestaltung und dekorative Oberflächen"
           className={styles.image}
           width="1920"
           height="760"
@@ -25,17 +25,18 @@ export default function ServicesHero() {
       <div className="container">
         <div className={styles.content}>
           <p className={styles.eyebrow}>
-            Spachtelarbeiten • Airless-Anstriche • Trockenbau
+            Fassaden • Decken • Dekorative Oberflächen
           </p>
 
           <h1 className={styles.title}>
-            Professionelle Renovierungsarbeiten und Innenausbau
+            Professionelle Fassaden-, Decken- und Dekorarbeiten
           </h1>
 
           <p className={styles.text}>
-            Mit über 20 Jahren Erfahrung biete ich Spachtelarbeiten,
-            Airless-Anstriche, Fassadenanstriche, Trockenbau, Bodenverlegung und
-            Renovierungsarbeiten für Wohnungen, Häuser und Gewerbeobjekte.
+            Mit über 20 Jahren Erfahrung biete ich hochwertige
+            Fassadengestaltung, moderne Deckensysteme, dekorative
+            Wandoberflächen und individuelle Lösungen für Wohnungen, Häuser und
+            Gewerbeobjekte.
           </p>
 
           <Link to="/kontakt" className={styles.btn}>
