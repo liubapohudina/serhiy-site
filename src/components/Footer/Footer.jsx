@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 import { Mail, MapPin, Phone } from 'lucide-react';
-import { FaInstagram } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 import logo from '../../assets/images/logo-white.webp';
 import styles from './Footer.module.css';
@@ -50,6 +50,14 @@ export default function Footer() {
                 aria-label="Instagram"
               >
                 <FaInstagram size={18} />
+              </a>
+              <a
+                href="https://wa.me/4915256507271"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+              >
+                <FaWhatsapp size={18} />
               </a>
             </div>
           </div>
